@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using SimpleLogger.Utils;
 
 namespace SimpleLogger
 {
@@ -20,7 +21,7 @@ namespace SimpleLogger
         {
             InitializeComponent();
 
-            connectToPipe(_cancellation.Token);
+            connectToPipe(_cancellation.Token).RunErrorHandler();
         }
 
         public void addLogging(string text)
