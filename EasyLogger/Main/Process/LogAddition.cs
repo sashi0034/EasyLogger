@@ -19,7 +19,8 @@ public record LogAddition(
         {
             tagText =
             {
-                Text = tag
+                Text = tag,
+                ToolTip = tag,
             },
             messageText =
             {

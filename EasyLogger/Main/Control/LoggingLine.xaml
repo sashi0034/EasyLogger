@@ -8,20 +8,20 @@
              d:DesignHeight="60" d:DesignWidth="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40"></ColumnDefinition>
-            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition Width="48"></ColumnDefinition>
+            <ColumnDefinition Width="72"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0" BorderThickness="0 0 0 1" BorderBrush="Gray">
-            <TextBlock Grid.Column="1" Name="timeText" VerticalAlignment="Center" FontSize="12">123456</TextBlock>
+            <TextBlock Grid.Column="1" Name="timeText" VerticalAlignment="Center" FontSize="14">123456</TextBlock>
         </Border>
         <Border Grid.Column="1" BorderThickness="0 0 0 1" Margin="1 0" BorderBrush="Gray">
-            <TextBlock Name="tagText" VerticalAlignment="Center" FontSize="12"></TextBlock>
+            <TextBlock Name="tagText" VerticalAlignment="Center" FontSize="14"></TextBlock>
         </Border>
         <TextBox Grid.Column="2"
                  Name="messageText"
                  IsReadOnly="True"
                  TextWrapping="Wrap"
-                 FontSize="12" />
+                 FontSize="14" />
     </Grid>
 </UserControl>

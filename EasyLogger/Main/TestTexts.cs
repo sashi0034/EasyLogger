@@ -19,7 +19,7 @@ public static class TestTexts
         "#I A swan swam over the sea, swim swan swim!",
         "#Warn I wish to wash my Irish wristwatch.",
         "#W A big black bug bit a big black bear.",
-        "#Info How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+        "#Info How much wood would a woodchuck chuck if a woodchuck could chuck wood?\nif a woodchuck could chuck wood?",
         "Peter Piper picked a peck of pickled peppers.",
         "#E If a dog chews shoes, whose shoes does he choose?",
         "#I Six slippery snails slid silently down the slope.",
@@ -28,7 +28,8 @@ public static class TestTexts
         "#I I need not your needles; they're needless to me.",
         "#Game Round the rugged rocks the ragged rascal ran.",
         "#I We surely shall see the sun shine soon.",
-        "#Tag-Only"
+        "#Tag-Only",
+        "#Actor-Last-Update",
     };
 
     public static IReadOnlyList<string> Data => _data;
