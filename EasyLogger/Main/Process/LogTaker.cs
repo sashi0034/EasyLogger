@@ -1,6 +1,7 @@
 ﻿#nullable enable
 
 using System.Windows.Controls;
+using System.Windows.Media;
 using SimpleLogger.Main.Control;
 using SimpleLogger.Main.Data;
 using SimpleLogger.Main.Present;
@@ -35,6 +36,8 @@ public record LogTaker(
         FilteringProcess.CheckAddFilter(tag);
         FilteringProcess.AppleElement(new LoggedElement(logging));
 
+        checkChangeColor(logging, tag);
+
         StackPanel.Children.Add(logging);
         LoggingList.Add(new LoggedElement(logging));
     }
@@ -67,6 +70,24 @@ public record LogTaker(
 
         default:
             return text.Substring(1, spaceIndex - 1);
+        }
+    }
+
+    private void checkChangeColor(LoggingLine logging, string tag)
+    {
+        switch (tag)
+        {
+        case ReservedTags.Info:
+            logging.ChangeTextColor(Brushes.LightCyan);
+            return;
+        case ReservedTags.Warn:
+            logging.ChangeTextColor(Brushes.Gold);
+            return;
+        case ReservedTags.Error:
+            logging.ChangeTextColor(Brushes.OrangeRed);
+            return;
+        default:
+            return;
         }
     }
 }
