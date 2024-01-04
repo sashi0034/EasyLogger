@@ -8,8 +8,9 @@ using SimpleLogger.Main.Present;
 namespace SimpleLogger.Main.Process;
 
 public record LogTaker(
-    LoggedData LoggedData,
-    StackPanel StackPanel)
+    LoggingList LoggingList,
+    StackPanel StackPanel,
+    FilteringProcess FilteringProcess)
 {
     public void Take(string text)
     {
@@ -31,8 +32,11 @@ public record LogTaker(
             }
         };
 
+        FilteringProcess.CheckAddFilter(tag);
+        FilteringProcess.AppleElement(new LoggedElement(logging));
+
         StackPanel.Children.Add(logging);
-        LoggedData.Add(tag, new LoggedElement(tag, logging));
+        LoggingList.Add(new LoggedElement(logging));
     }
 
     private static string getTag(string text, ref int cursor)

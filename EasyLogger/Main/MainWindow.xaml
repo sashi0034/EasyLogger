@@ -11,9 +11,20 @@
         ui:WindowHelper.UseModernWindowStyle="True"
         ui:ThemeManager.RequestedTheme="Dark"
         Closing="onClosing">
-    <Grid>
-        <ScrollViewer>
-            <StackPanel Name="stackPanel" Margin="10 0"/>
+    <Grid Margin="10 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Column="0">
+            <StackPanel x:Name="filteringStack">
+                <!-- <CheckBox Content="Info" /> -->
+                <!-- <CheckBox Content="Warn" /> -->
+                <!-- <CheckBox Content="Error" /> -->
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Column="1">
+            <StackPanel Name="loggingStackPanel" />
         </ScrollViewer>
     </Grid>
 </Window>

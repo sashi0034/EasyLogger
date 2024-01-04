@@ -20,7 +20,9 @@ namespace SimpleLogger.Main
     public partial class MainWindow : Window
     {
         private readonly CancellationTokenSource _cancellation = new();
-        private readonly LoggedData _loggedData = new();
+        private readonly FilteringModel _filteringModel = new();
+        private readonly LoggingList _loggingList = new();
+        private readonly FilteringProcess _filteringProcess;
         private readonly LogTaker _logTaker;
         private readonly PipeConnection _pipeConnection;
 
@@ -28,7 +30,9 @@ namespace SimpleLogger.Main
         {
             InitializeComponent();
 
-            _logTaker = new LogTaker(_loggedData, stackPanel);
+            _filteringProcess = new FilteringProcess(_filteringModel, filteringStack, _loggingList);
+            _filteringProcess.Setup();
+            _logTaker = new LogTaker(_loggingList, loggingStackPanel, _filteringProcess);
 
             _pipeConnection = new PipeConnection(Dispatcher, _logTaker);
             _pipeConnection.StartAsync(_cancellation.Token).RunErrorHandler();
