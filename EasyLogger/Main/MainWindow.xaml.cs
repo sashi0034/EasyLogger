@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using SimpleLogger.Main.Control;
+using SimpleLogger.Main.Data;
+using SimpleLogger.Main.Present;
 using SimpleLogger.Main.Process;
 using SimpleLogger.Utils;
 
@@ -18,46 +20,18 @@ namespace SimpleLogger.Main
     public partial class MainWindow : Window
     {
         private readonly CancellationTokenSource _cancellation = new();
-        private readonly LogAddition _logAddition;
+        private readonly LoggedData _loggedData = new();
+        private readonly LogTaker _logTaker;
+        private readonly PipeConnection _pipeConnection;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            _logAddition = new LogAddition(stackPanel);
+            _logTaker = new LogTaker(_loggedData, stackPanel);
 
-#if DEBUG
-            useTestTexts();
-#else
-            connectToPipe(_cancellation.Token).RunErrorHandler();
-#endif
-        }
-
-        private void useTestTexts()
-        {
-            foreach (var data in TestTexts.Data)
-            {
-                _logAddition.Add(data);
-            }
-        }
-
-        private async Task connectToPipe(CancellationToken cancellation)
-        {
-            _logAddition.Add("Waiting...");
-            using StreamReader reader = new StreamReader(Console.OpenStandardInput(), Encoding.UTF8);
-            while (cancellation.IsCancellationRequested == false)
-            {
-                var input = await reader.ReadLineAsync(cancellation);
-                // addLogging("🗨️ input");
-                if (input == null)
-                {
-                    // addLogging("😢 null");
-                    await Task.Delay(1000, cancellation);
-                    continue;
-                }
-
-                Dispatcher.Invoke(() => { _logAddition.Add("📝 " + input); });
-            }
+            _pipeConnection = new PipeConnection(Dispatcher, _logTaker);
+            _pipeConnection.StartAsync(_cancellation.Token).RunErrorHandler();
         }
 
         private void onClosing(object? sender, CancelEventArgs e)

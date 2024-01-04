@@ -2,9 +2,9 @@
 
 using System.Collections.Generic;
 
-namespace SimpleLogger.Main;
+namespace SimpleLogger.Main.Data;
 
-public static class TestTexts
+public static class DummyTexts
 {
     private static readonly List<string> _data = new()
     {

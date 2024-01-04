@@ -1,8 +1,8 @@
 ﻿#nullable enable
 
-namespace SimpleLogger.Main;
+namespace SimpleLogger.Main.Data;
 
-public class ReservedTags
+public static class ReservedTags
 {
     public const string Info = "Info";
     public const string Warn = "Warn";

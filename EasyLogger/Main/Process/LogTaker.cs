@@ -2,13 +2,16 @@
 
 using System.Windows.Controls;
 using SimpleLogger.Main.Control;
+using SimpleLogger.Main.Data;
+using SimpleLogger.Main.Present;
 
 namespace SimpleLogger.Main.Process;
 
-public record LogAddition(
+public record LogTaker(
+    LoggedData LoggedData,
     StackPanel StackPanel)
 {
-    public void Add(string text)
+    public void Take(string text)
     {
         if (text == "") return;
         int cursor = 0;
@@ -29,6 +32,7 @@ public record LogAddition(
         };
 
         StackPanel.Children.Add(logging);
+        LoggedData.Add(tag, new LoggedElement(tag, logging));
     }
 
     private static string getTag(string text, ref int cursor)
