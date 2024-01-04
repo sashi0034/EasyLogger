@@ -1,4 +1,4 @@
-﻿<Window x:Class="SimpleLogger.MainWindow"
+﻿<Window x:Class="SimpleLogger.Main.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,14 +7,13 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
         ResizeMode="CanResize"
-        Title="MainWindow" Height="450" Width="800"
+        Title="EasyLogger" Height="450" Width="800"
         ui:WindowHelper.UseModernWindowStyle="True"
         ui:ThemeManager.RequestedTheme="Dark"
         Closing="onClosing">
     <Grid>
         <ScrollViewer>
-            <StackPanel Name="stackPanel">
-            </StackPanel>
+            <StackPanel Name="stackPanel" Margin="10 0"/>
         </ScrollViewer>
     </Grid>
 </Window>

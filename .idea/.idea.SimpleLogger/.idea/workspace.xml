@@ -8,88 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd8fbf2-7837-4e35-8991-761e8f9fa08b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SimpleLogger/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleLogger/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleLogger/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleLogger/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleLogger/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/Resource.rc" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/Resource.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/dll/soundtouch/COPYING.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/dll/soundtouch/COPYING.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/dll/soundtouch/SoundTouch_x64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/dll/soundtouch/SoundTouch_x64.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/fontawesome/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/fontawesome/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/fontawesome/fontawesome-brands.otf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/fontawesome/fontawesome-brands.otf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/fontawesome/fontawesome-solid.otf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/fontawesome/fontawesome-solid.otf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/materialdesignicons/license.md" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/materialdesignicons/license.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/materialdesignicons/materialdesignicons-webfont.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/materialdesignicons/materialdesignicons-webfont.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/min/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/min/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/min/siv3d-min.woff" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/min/siv3d-min.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/LICENSE_E" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/LICENSE_E" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-black.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-black.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-bold.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-bold.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-heavy.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-heavy.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-light.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-light.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-medium.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-medium.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-regular.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-regular.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/mplus/mplus-1p-thin.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/mplus/mplus-1p-thin.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-cjk/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-cjk/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-cjk/NotoSansCJK-Regular.ttc.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-cjk/NotoSansCJK-Regular.ttc.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-cjk/NotoSansJP-Regular.otf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-cjk/NotoSansJP-Regular.otf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-emoji/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-emoji/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-emoji/NotoColorEmoji.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-emoji/NotoColorEmoji.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/font/noto-emoji/NotoEmoji-Regular.ttf.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/font/noto-emoji/NotoEmoji-Regular.ttf.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/apply_srgb_curve.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/apply_srgb_curve.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/bitmapfont.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/bitmapfont.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/copy.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/copy.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/forward3d.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/forward3d.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/forward3d.vs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/forward3d.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/fullscreen_triangle.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/fullscreen_triangle.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/fullscreen_triangle.vs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/fullscreen_triangle.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/gaussian_blur_9.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/gaussian_blur_9.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/line3d.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/line3d.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/line3d.vs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/line3d.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/msdffont.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/msdffont.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/msdffont_outline.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/msdffont_outline.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/msdffont_outlineshadow.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/msdffont_outlineshadow.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/msdffont_shadow.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/msdffont_shadow.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/msdfprint.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/msdfprint.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/round_dot.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/round_dot.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sdffont.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sdffont.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sdffont_outline.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sdffont_outline.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sdffont_outlineshadow.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sdffont_outlineshadow.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sdffont_shadow.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sdffont_shadow.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/shape.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/shape.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sky.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sky.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/sprite.vs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/sprite.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/square_dot.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/square_dot.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/shader/d3d11/texture.ps" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/shader/d3d11/texture.ps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/soundfont/GMGSx.sf2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/soundfont/GMGSx.sf2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/soundfont/GMGSx.sf2.zstdcmp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/soundfont/GMGSx.sf2.zstdcmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/128.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/256.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/32.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/64.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/engine/texture/box-shadow/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/engine/texture/box-shadow/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/App/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/App/icon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/Main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/SimpleLogger-Test.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/EasyLogger-Test.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/SimpleLogger-Test.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/SimpleLogger-Test.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/stdafx.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/stdafx.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger-Test/stdafx.h" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger-Test/stdafx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/SimpleLogger.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/EasyLogger.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/Utils/TaskExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/Utils/TaskExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/Utils/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/Utils/Util.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLogger/Utils/Win32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyLogger/Utils/Win32.cs" afterDir="false" />
-    </list>
+    <list default="true" id="1cd8fbf2-7837-4e35-8991-761e8f9fa08b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704323326530</updated>
       <workItem from="1704323327675" duration="1720000" />
-      <workItem from="1704338049992" duration="294000" />
+      <workItem from="1704338049992" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="Siv3Dプロジェクト追加">
       <option name="closed" value="true" />
@@ -245,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704325066531</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="プロジェクトリネーム 📳">
+      <option name="closed" value="true" />
+      <created>1704338378877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704338378877</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +184,7 @@
     <MESSAGE value="Siv3Dプロジェクト追加" />
     <MESSAGE value="最小限の構成を設定 " />
     <MESSAGE value="ModernWPF UI導入 " />
-    <option name="LAST_COMMIT_MESSAGE" value="ModernWPF UI導入 " />
+    <MESSAGE value="プロジェクトリネーム " />
+    <option name="LAST_COMMIT_MESSAGE" value="プロジェクトリネーム " />
   </component>
 </project>

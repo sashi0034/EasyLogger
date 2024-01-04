@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="SimpleLogger.Main.Control.LoggingLine"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SimpleLogger.Main.Control"
+             mc:Ignorable="d"
+             d:DesignHeight="60" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" BorderThickness="0 0 0 1" BorderBrush="Gray">
+            <TextBlock Grid.Column="1" Name="timeText" VerticalAlignment="Center" FontSize="12">123456</TextBlock>
+        </Border>
+        <Border Grid.Column="1" BorderThickness="0 0 0 1" Margin="1 0" BorderBrush="Gray">
+            <TextBlock Name="tagText" VerticalAlignment="Center" FontSize="12"></TextBlock>
+        </Border>
+        <TextBox Grid.Column="2"
+                 Name="messageText"
+                 IsReadOnly="True"
+                 TextWrapping="Wrap"
+                 FontSize="12" />
+    </Grid>
+</UserControl>

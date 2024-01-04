@@ -6,9 +6,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using SimpleLogger.Main.Control;
+using SimpleLogger.Main.Process;
 using SimpleLogger.Utils;
 
-namespace SimpleLogger
+namespace SimpleLogger.Main
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -16,29 +18,32 @@ namespace SimpleLogger
     public partial class MainWindow : Window
     {
         private readonly CancellationTokenSource _cancellation = new();
+        private readonly LogAddition _logAddition;
 
         public MainWindow()
         {
             InitializeComponent();
 
+            _logAddition = new LogAddition(stackPanel);
+
+#if DEBUG
+            useTestTexts();
+#else
             connectToPipe(_cancellation.Token).RunErrorHandler();
+#endif
         }
 
-        public void addLogging(string text)
+        private void useTestTexts()
         {
-            var textBox = new TextBox()
+            foreach (var data in TestTexts.Data)
             {
-                Text = text,
-                IsReadOnly = true,
-                TextWrapping = TextWrapping.Wrap,
-                Margin = new Thickness(8, 2, 8, 2),
-            };
-            stackPanel.Children.Add(textBox);
+                _logAddition.Add(data);
+            }
         }
 
         private async Task connectToPipe(CancellationToken cancellation)
         {
-            addLogging("Waiting...");
+            _logAddition.Add("Waiting...");
             using StreamReader reader = new StreamReader(Console.OpenStandardInput(), Encoding.UTF8);
             while (cancellation.IsCancellationRequested == false)
             {
@@ -51,7 +56,7 @@ namespace SimpleLogger
                     continue;
                 }
 
-                Dispatcher.Invoke(() => { addLogging("📝 " + input); });
+                Dispatcher.Invoke(() => { _logAddition.Add("📝 " + input); });
             }
         }
 
