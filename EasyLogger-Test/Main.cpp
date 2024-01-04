@@ -2,7 +2,7 @@
 
 void Main()
 {
-	ChildProcess childLogger{U"../../SimpleLogger/bin/Release/net7.0-windows/SimpleLogger.exe", Pipe::StdInOut};
+	ChildProcess childLogger{U"../../EasyLogger/bin/Release/net7.0-windows/EasyLogger.exe", Pipe::StdInOut};
 
 	double t{};
 
