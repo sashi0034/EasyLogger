@@ -23,7 +23,7 @@
                 <!-- <CheckBox Content="Error" /> -->
             </StackPanel>
         </ScrollViewer>
-        <ScrollViewer Grid.Column="1">
+        <ScrollViewer Grid.Column="1" Style="{x:Null}">
             <StackPanel Name="loggingStackPanel" Margin="0 0 10 0" />
         </ScrollViewer>
     </Grid>

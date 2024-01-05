@@ -30,6 +30,8 @@ namespace SimpleLogger.Main
         {
             InitializeComponent();
 
+            Title = $"EasyLogger [{DateTime.Now:HH:mm:ss}]";
+
             _filteringProcess = new FilteringProcess(_filteringModel, filteringStack, _loggingList);
             _filteringProcess.Setup();
             _logTaker = new LogTaker(_loggingList, loggingStackPanel, _filteringProcess);
