@@ -25,20 +25,20 @@ public record PipeConnection(
 
     private async Task process(CancellationToken cancellation)
     {
-        LogTaker.Take("Waiting...");
+        // LogTaker.Take("Waiting...");
         using StreamReader reader = new StreamReader(Console.OpenStandardInput(), Encoding.UTF8);
         while (cancellation.IsCancellationRequested == false)
         {
             var input = await reader.ReadLineAsync(cancellation);
-            // addLogging("🗨️ input");
+            // addLogging("input");
             if (input == null)
             {
-                // addLogging("😢 null");
+                // addLogging("null");
                 await Task.Delay(1000, cancellation);
                 continue;
             }
 
-            Dispatcher.Invoke(() => { LogTaker.Take("📝 " + input); });
+            Dispatcher.Invoke(() => { LogTaker.Take(input); });
         }
     }
 
