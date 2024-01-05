@@ -19,8 +19,12 @@ public record FilteringProcess(
         Model.IsAllFiltered = false;
         var allFilter = new CheckBox()
         {
-            Content = allTag,
-            IsChecked = false
+            Content = new TextBlock()
+            {
+                Text = allTag,
+                Foreground = System.Windows.Media.Brushes.LightCyan
+            },
+            IsChecked = false,
         };
         allFilter.Click += (sender, args) =>
         {
@@ -30,7 +34,9 @@ public record FilteringProcess(
             {
                 if (child is not CheckBox checkBox) continue;
                 if (checkBox == allFilter) continue;
-                checkBox.Visibility = allFilter.IsChecked.Value ? Visibility.Hidden : Visibility.Visible;
+                Model.SetFiltered(checkBox.Content as string ?? "", Model.IsAllFiltered);
+                checkBox.IsChecked = Model.IsAllFiltered;
+                // checkBox.Visibility = allFilter.IsChecked.Value ? Visibility.Hidden : Visibility.Visible;
             }
         };
         FilterStack.Children.Add(allFilter);
@@ -38,7 +44,7 @@ public record FilteringProcess(
 
     public void AppleElement(LoggedElement element)
     {
-        bool isVisible = Model.IsAllFiltered || (Model.IsFiltered(element.Tag));
+        bool isVisible = (Model.IsFiltered(element.Tag));
         element.LoggingLine.Visibility = isVisible ? Visibility.Visible : Visibility.Collapsed;
     }
 
