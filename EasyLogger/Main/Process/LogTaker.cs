@@ -13,15 +13,22 @@ public record LogTaker(
     StackPanel StackPanel,
     FilteringProcess FilteringProcess)
 {
+    private ulong _tickedFrame = 0;
+
     public void Take(string text)
     {
         if (text == "") return;
         int cursor = 0;
         var tag = getTag(text, ref cursor);
         var message = text.Substring(cursor, text.Length - cursor);
+        if (checkFunctionTag(tag, message)) return;
 
         var logging = new LoggingLine
         {
+            timeText =
+            {
+                Text = _tickedFrame.ToString(),
+            },
             tagText =
             {
                 Text = tag,
@@ -52,6 +59,7 @@ public record LogTaker(
         {
         case -1:
             cursor = text.Length;
+            if (text.Length == 1) return ReservedTags.Unknown;
             return text.Substring(1, text.Length - 1);
         case 1:
             return ReservedTags.Unknown;
@@ -70,6 +78,18 @@ public record LogTaker(
 
         default:
             return text.Substring(1, spaceIndex - 1);
+        }
+    }
+
+    private bool checkFunctionTag(string tag, string message)
+    {
+        switch (tag)
+        {
+        case ReservedTags.Tick:
+            _tickedFrame++;
+            return true;
+        default:
+            return false;
         }
     }
 
