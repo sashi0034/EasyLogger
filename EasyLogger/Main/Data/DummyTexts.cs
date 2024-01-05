@@ -8,6 +8,10 @@ public static class DummyTexts
 {
     private static readonly List<string> _data = new()
     {
+        "This is virus.",
+        "#W Do not erase me.",
+        "#Clear Info",
+        "Start happy.",
         "#I The quick brown fox jumps over the lazy dog.",
         "#I She sells seashells by the seashore.",
         "#I How can a clam cram in a clean cream can?",
@@ -19,6 +23,7 @@ public static class DummyTexts
         "#I A swan swam over the sea, swim swan swim!",
         "#Warn I wish to wash my Irish wristwatch.",
         "#W A big black bug bit a big black bear.",
+        "#Tick",
         "#Info How much wood would a woodchuck chuck if a woodchuck could chuck wood?\nif a woodchuck could chuck wood?",
         "Peter Piper picked a peck of pickled peppers.",
         "#E If a dog chews shoes, whose shoes does he choose?",

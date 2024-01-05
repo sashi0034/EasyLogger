@@ -15,6 +15,15 @@ public record FilteringProcess(
 {
     public void Setup()
     {
+        setupAllTag();
+
+        CheckAddFilter(ReservedTags.Info);
+        CheckAddFilter(ReservedTags.Warn);
+        CheckAddFilter(ReservedTags.Error);
+    }
+
+    private void setupAllTag()
+    {
         var allTag = "All";
         Model.IsAllFiltered = false;
         var allFilter = new CheckBox()
@@ -29,7 +38,6 @@ public record FilteringProcess(
         allFilter.Click += (sender, args) =>
         {
             Model.IsAllFiltered = allFilter.IsChecked ?? false;
-            applyList(LoggingList);
             foreach (var child in FilterStack.Children)
             {
                 if (child is not CheckBox checkBox) continue;
@@ -38,6 +46,8 @@ public record FilteringProcess(
                 checkBox.IsChecked = Model.IsAllFiltered;
                 // checkBox.Visibility = allFilter.IsChecked.Value ? Visibility.Hidden : Visibility.Visible;
             }
+
+            applyList(LoggingList);
         };
         FilterStack.Children.Add(allFilter);
     }

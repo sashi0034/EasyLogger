@@ -16,4 +16,10 @@ public partial class LoggingLine : UserControl
         tagText.Foreground = brush;
         messageText.Foreground = brush;
     }
+
+    public void ApplyTooltip()
+    {
+        if (tagText.Text.Length < 12) return;
+        tagText.ToolTip = tagText.Text;
+    }
 }

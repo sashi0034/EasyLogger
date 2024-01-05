@@ -32,13 +32,13 @@ public record LogTaker(
             tagText =
             {
                 Text = tag,
-                ToolTip = tag,
             },
             messageText =
             {
                 Text = message
             }
         };
+        logging.ApplyTooltip();
 
         FilteringProcess.CheckAddFilter(tag);
         FilteringProcess.AppleElement(new LoggedElement(logging));
@@ -87,6 +87,10 @@ public record LogTaker(
         {
         case ReservedTags.Tick:
             _tickedFrame++;
+            return true;
+        case ReservedTags.Clear:
+            if (message == "") LoggingList.RemoveAll(StackPanel);
+            else LoggingList.RemoveByTag(StackPanel, message);
             return true;
         default:
             return false;

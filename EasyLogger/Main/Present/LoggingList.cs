@@ -1,6 +1,7 @@
 ﻿#nullable enable
 
 using System.Collections.Generic;
+using System.Windows.Controls;
 using System.Windows.Documents;
 using SimpleLogger.Main.Control;
 
@@ -22,5 +23,24 @@ public class LoggingList
     public void Add(LoggedElement log)
     {
         _data.Add(log);
+    }
+
+    public void RemoveByTag(StackPanel parent, string tag)
+    {
+        for (int i = _data.Count - 1; i >= 0; --i)
+        {
+            if (_data[i].LoggingLine.tagText.Text != tag) continue;
+            _data.RemoveAt(i);
+            parent.Children.RemoveAt(i);
+        }
+    }
+
+    public void RemoveAll(StackPanel parent)
+    {
+        for (int i = _data.Count - 1; i >= 0; --i)
+        {
+            _data.RemoveAt(i);
+            parent.Children.RemoveAt(i);
+        }
     }
 }
